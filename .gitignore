@@ -4,7 +4,4 @@ __pycache__/
 venv/
 .streamlit/
 .local-packages/
-models/*.joblib
-models/*.json
-models/*.csv
-!models/.gitkeep
+

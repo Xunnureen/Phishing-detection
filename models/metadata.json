@@ -1,0 +1,309 @@
+{
+  "metrics": {
+    "random_state": 42,
+    "test_size": 0.2,
+    "accuracy": 0.7941888619854721,
+    "precision_phishing": 0.9334637964774951,
+    "recall_phishing": 0.7781402936378466,
+    "f1_phishing": 0.8487544483985765,
+    "class_mapping": {
+      "phishing_label": "1",
+      "legitimate_label": "0"
+    },
+    "confusion_matrix": [
+      [
+        179,
+        34
+      ],
+      [
+        136,
+        477
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "0",
+      "1"
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.5682539682539682,
+        "recall": 0.8403755868544601,
+        "f1-score": 0.678030303030303,
+        "support": 213.0
+      },
+      "1": {
+        "precision": 0.9334637964774951,
+        "recall": 0.7781402936378466,
+        "f1-score": 0.8487544483985765,
+        "support": 613.0
+      },
+      "accuracy": 0.7941888619854721,
+      "macro avg": {
+        "precision": 0.7508588823657316,
+        "recall": 0.8092579402461534,
+        "f1-score": 0.7633923757144397,
+        "support": 826.0
+      },
+      "weighted avg": {
+        "precision": 0.8392874122019367,
+        "recall": 0.7941888619854721,
+        "f1-score": 0.8047299411789127,
+        "support": 826.0
+      }
+    },
+    "train_rows": 3303,
+    "test_rows": 826
+  },
+  "dataset": {
+    "source": "C:\\Users\\Dev Xunnureen\\Desktop\\Desktop\\Phishing detection system (Random-forest)\\data\\zieni_phishing_detection.csv",
+    "rows_read": 10000,
+    "rows_after_cleaning": 4129,
+    "feature_count": 74,
+    "target_column": "phishing",
+    "numeric_features": [
+      "num_dots_url",
+      "num_hyph_url",
+      "num_underline_url",
+      "num_slash_url",
+      "num_questionmark_url",
+      "num_equal_url",
+      "at_sign_url",
+      "num_and_url",
+      "num_exclamation_url",
+      "num_space_url",
+      "tilde_url",
+      "num_comma_url",
+      "num_plus_url",
+      "num_asterisk_url",
+      "hashtag_url",
+      "num_dollar_url",
+      "num_percent_url",
+      "num_tld_url",
+      "length_url",
+      "email_in_url",
+      "num_dots_dom",
+      "num_hyph_dom",
+      "num_underline_dom",
+      "num_vowels_dom",
+      "length_dom",
+      "dom_in_ip",
+      "server_client_dom",
+      "num_dots_path",
+      "num_hyph_path",
+      "num_underline_path",
+      "num_slash_path",
+      "num_equal_path",
+      "at_sign_path",
+      "num_and_path",
+      "num_exclamation_path",
+      "num_space_path",
+      "tilde_path",
+      "num_comma_path",
+      "num_plus_path",
+      "num_asterisk_path",
+      "num_percent_path",
+      "length_path",
+      "num_dots_file",
+      "num_hyph_file",
+      "num_underline_file",
+      "num_equal_file",
+      "at_sign_file",
+      "num_and_file",
+      "num_exclamation_file",
+      "num_space_file",
+      "tilde_file",
+      "num_comma_file",
+      "num_plus_file",
+      "num_percent_file",
+      "length_file",
+      "num_dots_param",
+      "num_hyph_param",
+      "num_underline_param",
+      "num_slash_param",
+      "num_questionmark_param",
+      "num_equal_param",
+      "at_sign_param",
+      "num_and_param",
+      "num_exclamation_param",
+      "num_space_param",
+      "tilde_param",
+      "num_comma_param",
+      "num_plus_param",
+      "num_asterisk_param",
+      "num_dollar_param",
+      "num_percent_param",
+      "length_param",
+      "tld_in_param",
+      "num_param"
+    ],
+    "categorical_features": [],
+    "classes": [
+      0,
+      1
+    ],
+    "class_counts": {
+      "0": 1066,
+      "1": 3063
+    },
+    "missing_values_replaced": 0,
+    "duplicate_rows_removed": 5871
+  },
+  "feature_columns": [
+    "num_dots_url",
+    "num_hyph_url",
+    "num_underline_url",
+    "num_slash_url",
+    "num_questionmark_url",
+    "num_equal_url",
+    "at_sign_url",
+    "num_and_url",
+    "num_exclamation_url",
+    "num_space_url",
+    "tilde_url",
+    "num_comma_url",
+    "num_plus_url",
+    "num_asterisk_url",
+    "hashtag_url",
+    "num_dollar_url",
+    "num_percent_url",
+    "num_tld_url",
+    "length_url",
+    "email_in_url",
+    "num_dots_dom",
+    "num_hyph_dom",
+    "num_underline_dom",
+    "num_vowels_dom",
+    "length_dom",
+    "dom_in_ip",
+    "server_client_dom",
+    "num_dots_path",
+    "num_hyph_path",
+    "num_underline_path",
+    "num_slash_path",
+    "num_equal_path",
+    "at_sign_path",
+    "num_and_path",
+    "num_exclamation_path",
+    "num_space_path",
+    "tilde_path",
+    "num_comma_path",
+    "num_plus_path",
+    "num_asterisk_path",
+    "num_percent_path",
+    "length_path",
+    "num_dots_file",
+    "num_hyph_file",
+    "num_underline_file",
+    "num_equal_file",
+    "at_sign_file",
+    "num_and_file",
+    "num_exclamation_file",
+    "num_space_file",
+    "tilde_file",
+    "num_comma_file",
+    "num_plus_file",
+    "num_percent_file",
+    "length_file",
+    "num_dots_param",
+    "num_hyph_param",
+    "num_underline_param",
+    "num_slash_param",
+    "num_questionmark_param",
+    "num_equal_param",
+    "at_sign_param",
+    "num_and_param",
+    "num_exclamation_param",
+    "num_space_param",
+    "tilde_param",
+    "num_comma_param",
+    "num_plus_param",
+    "num_asterisk_param",
+    "num_dollar_param",
+    "num_percent_param",
+    "length_param",
+    "tld_in_param",
+    "num_param"
+  ],
+  "top_features": [
+    {
+      "feature": "length_url",
+      "importance": 0.22454815320903815
+    },
+    {
+      "feature": "length_path",
+      "importance": 0.12765105410344885
+    },
+    {
+      "feature": "length_dom",
+      "importance": 0.09440590326955073
+    },
+    {
+      "feature": "num_vowels_dom",
+      "importance": 0.07154161847203844
+    },
+    {
+      "feature": "length_file",
+      "importance": 0.06884559196143411
+    },
+    {
+      "feature": "num_slash_url",
+      "importance": 0.04934046374405094
+    },
+    {
+      "feature": "length_param",
+      "importance": 0.041142070430620015
+    },
+    {
+      "feature": "num_dots_url",
+      "importance": 0.03603985395535829
+    },
+    {
+      "feature": "num_slash_path",
+      "importance": 0.03558524351560537
+    },
+    {
+      "feature": "num_hyph_url",
+      "importance": 0.03371221773341108
+    },
+    {
+      "feature": "num_dots_dom",
+      "importance": 0.028471678125264563
+    },
+    {
+      "feature": "num_questionmark_url",
+      "importance": 0.01920324076969192
+    },
+    {
+      "feature": "num_equal_param",
+      "importance": 0.019030886588698396
+    },
+    {
+      "feature": "num_hyph_dom",
+      "importance": 0.01651191998905672
+    },
+    {
+      "feature": "num_equal_url",
+      "importance": 0.016429032892146585
+    },
+    {
+      "feature": "num_dots_path",
+      "importance": 0.014502979568546901
+    },
+    {
+      "feature": "num_hyph_path",
+      "importance": 0.012393033907284485
+    },
+    {
+      "feature": "num_param",
+      "importance": 0.011801713005478711
+    },
+    {
+      "feature": "num_dots_file",
+      "importance": 0.010401397872750646
+    },
+    {
+      "feature": "num_tld_url",
+      "importance": 0.007390630445082164
+    }
+  ]
+}

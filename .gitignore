@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.streamlit/
+.local-packages/
+models/*.joblib
+models/*.json
+models/*.csv
+!models/.gitkeep
